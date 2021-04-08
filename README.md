@@ -1,3 +1,3 @@
-# MAI_Health_Tracker
+# MAI-Health Tracker
 
 ### 
