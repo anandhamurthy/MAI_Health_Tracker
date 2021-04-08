@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/title"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Weight"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:id="@+id/save"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/solid_line"
+        android:layout_below="@+id/title"
+        android:id="@+id/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/line"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/kg_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:np_width="64dp"
+            app:np_height="180dp"
+            app:np_dividerColor="@color/accent"
+            app:np_max="149"
+            android:layout_margin="5dp"
+            app:np_min="20"
+            android:layout_gravity="center"
+            app:np_selectedTextColor="@color/black"
+            app:np_selectedTextSize="18dp"
+            app:np_textColor="@color/black"
+            app:np_textSize="15dp"
+            app:np_value="50" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/kg_counter"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_weight="1"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

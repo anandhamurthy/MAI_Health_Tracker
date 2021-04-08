@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FD6A7E</color>
+    <color name="primary">#6AC4FB</color>
+    <color name="primary_dark">#20A6F8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#663399</color>
+    <color name="login_bg">#FFD700</color>
+    <color name="main_bg">#1B76FF</color>
+
+    <color name="water">#2CDFF4</color>
+    <color name="weight">#A504D1</color>
+
+    <color name="food">#FE8220</color>
+    <color name="drink">#20F0FE</color>
+    <color name="symptom">#FE204C</color>
+    <color name="note">#FEB720</color>
+    <color name="health">#06F109</color>
+
+    <color name="health_1">#000000</color>
+    <color name="health_2">#DCAA00</color>
+    <color name="health_3">#FAF55E</color>
+    <color name="health_4">#CBFA5E</color>
+    <color name="health_5">#5EFA71</color>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:id="@+id/b_remainder"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:id="@+id/l_remainder"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Snack"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:id="@+id/s_remainder"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dinner"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:id="@+id/d_remainder"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/clock"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

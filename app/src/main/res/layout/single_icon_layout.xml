@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:id="@+id/layout"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/image_layout"
+            android:layout_margin="10dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_d_2" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/count"
+            android:padding="1dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:background="@drawable/count_bg"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="-10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/remove_bg"
+            android:src="@drawable/remove" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/layout"
+        android:id="@+id/name"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
